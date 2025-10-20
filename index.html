@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="ONG VerdeVida - Projetos ambientais, voluntariado, educação ecológica e ações sustentáveis em todo o Brasil." />
+    <title>ONG Ambiental VerdeVida</title>
+</head>
+
+<body>
+    <header>
+        <!-- Links e imagem da logo -->
+        <a href="index.html"><img src="./src/img/VerdeVida.png" alt="Logo da ONG VerdeVida" class="logo" /></a>
+        <nav class="links">
+            <a href="index.html">Home</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="cadastro.html">Cadastro</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção principal -->
+        <section id="hero">
+            <h1>Juntos pela preservação do meio ambiente</h1>
+            <p>Conheça nossos projetos e faça parte da mudança.</p>
+            <img src="./src/img/preservação.png" alt="Preservação ambiental" class="preservacao">
+            <br>
+            <button onclick="scrollToSection('projetos')">Quero ajudar</button>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos">
+            <h2>🌿 Projetos em andamento</h2>
+
+            <article>
+                <h3>Reflorestamento da Serra</h3>
+                <p>Plantio de 10 mil mudas nativas em áreas degradadas.</p>
+                <img src="./src/img/plantio.png" alt="Projeto de reflorestamento" class="plantio">
+            </article>
+
+            <article>
+                <h3>Educação Ambiental nas Escolas</h3>
+                <p>Oficinas e palestras para crianças e adolescentes.</p>
+                <img src="./src/img/Educação.png" alt="Educação ambiental" class="educacao">
+            </article>
+        </section>
+
+        <!-- Quem Somos -->
+        <section id="sobre">
+            <h2>🌎 Quem Somos</h2>
+            <p>
+                A ONG <strong>VerdeVida</strong> nasceu em 2025 com o propósito de promover ações de preservação
+                ambiental, educação ecológica e engajamento comunitário. Atuamos em diversas regiões do Brasil com
+                projetos que impactam positivamente o meio ambiente e a vida das pessoas.
+            </p>
+        </section>
+
+        <section>
+            <h2>🌱 Missão</h2>
+            <p>Promover a sustentabilidade e a conscientização ambiental por meio de projetos educativos,
+                reflorestamento e mobilização social.</p>
+        </section>
+
+        <section>
+            <h2>💡 Visão</h2>
+            <p>Ser referência nacional em ações ambientais que transformam comunidades e preservam ecossistemas.</p>
+        </section>
+
+        <section>
+            <h2>💚 Valores</h2>
+            <ul>
+                <li>Respeito à natureza</li>
+                <li>Transparência e ética</li>
+                <li>Inclusão e diversidade</li>
+                <li>Educação como ferramenta de transformação</li>
+                <li>Colaboração e voluntariado</li>
+            </ul>
+        </section>
+
+        <!-- História -->
+        <section>
+            <h2>📜 Nossa História</h2>
+            <p>
+                Fundada em 2025, a ONG alcançou um marco histórico com o projeto <strong>Floresta Inteligente</strong>,
+                que utiliza drones e sensores para monitorar áreas de reflorestamento em tempo real.
+                A iniciativa foi premiada internacionalmente por sua inovação e impacto.
+                Hoje, com mais de 120 mil árvores plantadas, 8 mil voluntários cadastrados e parcerias com universidades
+                e empresas sustentáveis, a VerdeVida continua sua missão de transformar o cuidado com o meio ambiente em
+                um movimento acessível, tecnológico e comunitário.
+            </p>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>📬 Fale com a VerdeVida</h2>
+            <p>
+                Estamos aqui para ouvir você! Seja para tirar dúvidas, propor parcerias, oferecer apoio ou se envolver
+                com nossos projetos, entre em contato conosco.
+            </p>
+        </section>
+
+        <section>
+            <h3>📞 Informações de Contato</h3>
+            <ul>
+                <li>📧 E-mail: contato@verdevida.org.br</li>
+                <li>📱 WhatsApp: (11) 96604-8752</li>
+                <li>📍 Endereço: Rua Boa Vista, 123 - Embu Guaçu - São Paulo, SP</li>
+                <li>🕒 Atendimento: Segunda a Sexta, das 9h às 17h</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>📍 Localização</h3>
+            <p>Nosso escritório está localizado na zona sul de São Paulo. Veja no mapa abaixo:</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4340.118163399113!2d-46.81968805985898!3d-23.833181222123933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfb525924bc4bf%3A0x9d3e2907cfe36d11!2sEmbu-Gua%C3%A7u%2C%20SP%2C%2006900-000!5e0!3m2!1spt-BR!2sbr!4v1760531721924!5m2!1spt-BR!2sbr"
+                height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section id="mensagem">
+            <h3>📝 Envie uma Mensagem</h3>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required />
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required />
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="mensagem-confirmacao"></div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <p>📧 contato@verdevida.org.br | 📍 São Paulo - SP</p>
+        <p>&copy; 2025 ONG VerdeVida</p>
+    </footer>
+</body>
+
+</html>

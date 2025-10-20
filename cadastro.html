@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | ONG VerdeVida</title>
+</head>
+
+<body>
+    <!-- ===================== CABEÇALHO ===================== -->
+    <header>
+        <!-- Logo com link para a página inicial -->
+        <a href="index.html">
+            <img src="./src/img/VerdeVida.png" alt="Logo da ONG VerdeVida" class="logo" />
+        </a>
+
+        <!-- Navegação principal -->
+        <nav class="links">
+            <a href="index.html">Home</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="cadastro.html">Cadastro</a>
+        </nav>
+    </header>
+
+    <!-- ===================== CONTEÚDO PRINCIPAL ===================== -->
+    <main>
+        <!-- Seção introdutória do formulário -->
+        <section>
+            <h2>📝 Faça seu Cadastro</h2>
+            <p>
+                Venha fazer parte da VerdeVida e ajude a construir um futuro mais sustentável para todos.
+            </p>
+        </section>
+
+        <!-- Formulário de cadastro -->
+        <section>
+            <form id="form-cadastro">
+                <!-- ===================== DADOS PESSOAIS ===================== -->
+                <fieldset>
+                    <legend>👤 Dados Pessoais</legend>
+
+                    <!-- Campo de nome completo -->
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required />
+
+                    <!-- Campo de e-mail com validação HTML5 -->
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <!-- Campo de CPF com máscara e padrão de validação -->
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                        placeholder="000.000.000-00" />
+
+                    <!-- Campo de telefone -->
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000" />
+
+                    <!-- Data de nascimento -->
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" id="data" name="data" required />
+
+                    <!-- Endereço completo -->
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required />
+
+                    <!-- CEP com validação -->
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required pattern="\d{5}-?\d{3}" placeholder="00000-000" />
+
+                    <!-- Cidade -->
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required />
+
+                    <!-- Estado (lista suspensa com todos os estados brasileiros) -->
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="">Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+
+                    <!-- Gênero -->
+                    <label for="genero">Gênero:</label>
+                    <select name="genero" id="genero">
+                        <option value="">Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="nao-binario">Não-binário</option>
+                        <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                    </select>
+                </fieldset>
+
+                <!-- ===================== PERFIL DE VOLUNTARIADO ===================== -->
+                <fieldset>
+                    <legend>🎯 Perfil de Voluntariado</legend>
+
+                    <!-- Área de interesse -->
+                    <label for="interesse">Área de interesse:</label>
+                    <select name="interesse" id="interesse" required>
+                        <option value="">Selecione</option>
+                        <option value="educacao">Educação ambiental</option>
+                        <option value="reflorestamento">Reflorestamento</option>
+                        <option value="comunicacao">Comunicação</option>
+                        <option value="evento">Eventos e logística</option>
+                    </select>
+
+                    <!-- Disponibilidade -->
+                    <label for="disponibilidade">Disponibilidade:</label>
+                    <select name="disponibilidade" id="disponibilidade" required>
+                        <option value="">Selecione</option>
+                        <option value="segunda">Segunda-feira</option>
+                        <option value="terca">Terça-feira</option>
+                        <option value="quarta">Quarta-feira</option>
+                        <option value="quinta">Quinta-feira</option>
+                        <option value="sexta">Sexta-feira</option>
+                        <option value="sabado">Sábado</option>
+                        <option value="domingo">Domingo</option>
+                    </select>
+
+                    <!-- Campo de mensagem -->
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" rows="4"
+                        placeholder="Conte um pouco sobre você..."></textarea>
+
+                    <!-- Aceite de termos -->
+                    <label>
+                        <input type="checkbox" name="termos" required />
+                        Concordo com os termos e políticas da ONG VerdeVida.
+                    </label>
+
+                    <!-- Envio de arquivo PDF -->
+                    <label for="documento">Enviar documento (PDF):</label>
+                    <input type="file" name="documento" id="documento" accept=".pdf" required />
+
+                    <!-- Botões de ação -->
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Cadastrar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer id="contato">
+        <p>📧 contato@verdevida.org.br | 📍 São Paulo - SP</p>
+        <p>&copy; 2025 ONG VerdeVida</p>
+    </footer>
+</body>
+
+</html>
