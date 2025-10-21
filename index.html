@@ -36,13 +36,13 @@
             <h2>🌿 Projetos em andamento</h2>
 
             <article>
-                <h3>Reflorestamento da Serra</h3>
+                <h3>Reflorestamento da Serra <span class="badge">Em andamento</span></h3>
                 <p>Plantio de 10 mil mudas nativas em áreas degradadas.</p>
                 <img src="./src/img/plantio.png" alt="Projeto de reflorestamento" class="imagem-full">
             </article>
 
             <article>
-                <h3>Educação Ambiental nas Escolas</h3>
+                <h3>Educação Ambiental nas Escolas <span class="badge">Alta demanda</span></h3>
                 <p>Oficinas e palestras para crianças e adolescentes.</p>
                 <img src="./src/img/Educação.png" alt="Educação ambiental" class="imagem-full">
             </article>
@@ -138,17 +138,39 @@
 
                 <button type="submit" class="btn">Enviar</button>
             </form>
-            <div id="mensagem-confirmacao"></div>
+            <div class="alert" id="mensagem-confirmacao">
+                ✅ Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.
+            </div>
         </section>
     </main>
 
+    <!-- ==================== MODAL DE TERMOS ==================== -->
+    <dialog id="modal-termos">
+        <header>
+            <h3>📜 Termos e Políticas</h3>
+        </header>
+
+        <section>
+            <p>
+                Ao se cadastrar ou enviar mensagens, você concorda com os termos de uso da ONG VerdeVida,
+                incluindo o uso responsável dos dados e respeito à nossa missão ambiental.
+            </p>
+        </section>
+
+        <footer>
+            <button onclick="document.getElementById('modal-termos').close()">Concordo</button>
+        </footer>
+    </dialog>
+    
     <footer id="contato">
         <p>📧 contato@verdevida.org.br | 📍 São Paulo - SP</p>
         <p>&copy; 2025 ONG VerdeVida</p>
+        <a href="#" onclick="document.getElementById('modal-termos').style.display='block'">Ver termos da ONG</a>
     </footer>
 </body>
 
 
 </html>
+
 
 
