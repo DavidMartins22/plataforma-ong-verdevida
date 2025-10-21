@@ -14,7 +14,7 @@
         <!-- Links e imagem da logo -->
         <a href="index.html"><img src="./src/img/VerdeVida.png" alt="Logo da ONG VerdeVida" class="logo" /></a>
         <button id="menu-btn">☰</button>
-        <nav class="links">
+        <nav class="menu-mobile" id="menu-mobile">
             <a href="index.html">Home</a>
             <a href="projetos.html">Projetos</a>
             <a href="cadastro.html">Cadastro</a>
@@ -28,7 +28,7 @@
             <p>Conheça nossos projetos e faça parte da mudança.</p>
             <img src="./src/img/preservação.png" alt="Preservação ambiental" class="preservacao">
             <br>
-            <button onclick="scrollToSection('projetos')">Quero ajudar</button>
+            <button class="btn" onclick="scrollToSection('projetos')">Quero ajudar</button>
         </section>
 
         <!-- Projetos -->
@@ -136,7 +136,7 @@
                 <label for="mensagem">Mensagem:</label>
                 <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="btn">Enviar</button>
             </form>
             <div id="mensagem-confirmacao"></div>
         </section>
@@ -150,3 +150,4 @@
 
 
 </html>
+
