@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos & Voluntariado | ONG VerdeVida</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- ==================== HEADER ==================== -->
-  <header>
-        <!-- Links e imagem da logo -->        
+    <header>
         <a href="index.html"><img src="./src/img/VerdeVida.png" alt="Logo da ONG VerdeVida" class="logo" /></a>
-
         <h1 class="nome">Ong VerdeVida</h1>
-
         <nav class="menu-mobile" id="menu-mobile">
             <a href="index.html">Home</a>
             <a href="projetos.html">Projetos</a>
             <a href="cadastro.html">Cadastro</a>
         </nav>
-
         <button id="menu-btn">☰</button>
     </header>
 
     <!-- ==================== MAIN ==================== -->
     <main>
-
         <!-- ==================== Introdução ==================== -->
         <section>
             <h1>🌱 Nossos Projetos Ambientais</h1>
@@ -34,83 +33,96 @@
                 Brasil.</p>
         </section>
 
-        <!-- ==================== Projetos em andamento ==================== -->
+        <!-- Projetos em andamento -->
         <section aria-labelledby="projetos-ativos">
             <h2 id="projetos-ativos">Projetos em andamento</h2>
-
             <article>
-                <h3>Floresta Inteligente <span class="badge">Em expansão</span></h3>
-                <p><strong>Monitoramento de áreas</strong> reflorestadas com drones e sensores climáticos. Atualmente
-                    cobre 3 estados e já plantou mais de 20 mil mudas nativas.</p>
-                <ul>
-                    <li>📍 Local: Amazônia Legal</li>
-                    <li>📅 Início: Março de 2024</li>
-                    <li>🔄 Status: Em expansão</li>
-                </ul>
-                <div>
-                    <span class="tag">Reflorestamento</span>
-                    <span class="tag">Tecnologia</span>
-                    <span class="tag">Monitoramento</span>
-                </div>
-                <img src="./src/img/Floresta Inteligente.png" alt="Projeto Floresta Inteligente" class="imagem-full">
-            </article>
+                <h3>EcoTech Jovem & Floresta Inteligente<span class="badge">Ativos</span></h3>
 
-            <article>
-                <h3>EcoTech Jovem <span class="badge">Ativo</span></h3>
-                <p><strong>Capacitação de jovens</strong> em tecnologias verdes, compostagem automatizada e aplicativos
-                    de mapeamento ecológico.</p>
+                <p>
+                    O projeto <strong>EcoTech Jovem</strong> oferece capacitação de jovens em tecnologias verdes,
+                    compostagem automatizada
+                    e desenvolvimento de aplicativos de mapeamento ecológico, promovendo educação ambiental e inovação.
+                </p>
+
+                <p>
+                    Já o projeto <strong>Floresta Inteligente</strong> realiza o monitoramento de áreas reflorestadas
+                    com drones e sensores
+                    climáticos. Atualmente cobre três estados e já plantou mais de 20 mil mudas nativas.
+                </p>
+
                 <ul>
-                    <li>📍 Local: Salvador, BA</li>
-                    <li>📅 Início: Fevereiro de 2025</li>
-                    <li>🔄 Status: Ativo</li>
+                    <li>📍 Locais: Salvador, BA e Amazônia Legal</li>
+                    <li>📅 Início: Março de 2024 e Fevereiro de 2025</li>
+                    <li>🔄 Status: Em expansão e Ativo</li>
                 </ul>
+
                 <div>
                     <span class="tag">Educação</span>
                     <span class="tag">Tecnologia Verde</span>
                     <span class="tag">Juventude</span>
+                    <span class="tag">Reflorestamento</span>
+                    <span class="tag">Tecnologia</span>
+                    <span class="tag">Monitoramento</span>
                 </div>
-                <img src="./src/img/EcoTech Jovem.png" alt="Projeto EcoTech Jovem" class="imagem-full">
             </article>
+
+            <section class="carrossel" id="carrossel-ativo">
+                <button class="btn-esquerda">⬅</button>
+                <div class="carrossel-container">
+                    <img src="./src/img/EcoTech Jovem.png" alt="EcoTech Jovem" class="carrossel-img">
+                    <img src="./src/img/Floresta Inteligente.png" alt="Floresta Inteligente"
+                        class="carrossel-img ativo">
+                </div>
+                <button class="btn-direita">➡</button>
+            </section>
         </section>
 
-        <!-- ==================== Projetos concluídos ==================== -->
+        <!-- Projetos concluídos -->
         <section aria-labelledby="projetos-concluidos">
             <h2 id="projetos-concluidos">Projetos Concluídos</h2>
-
             <article>
-                <h3>EcoArte <span class="badge">Finalizado</span></h3>
-                <p>Oficinas de arte com materiais recicláveis para crianças e adolescentes, promovendo consciência
-                    ambiental e expressão criativa. As obras foram expostas em centros culturais e escolas.</p>
+                <h3>EcoArte & BioLuz <span class="badge">Finalizados</span></h3>
+
+                <p>
+                    O projeto <strong>EcoArte</strong> promoveu oficinas de arte com materiais recicláveis para crianças
+                    e adolescentes,
+                    promovendo a consciência ambiental e a criatividade das crianças. As obras foram expostas em centros
+                    culturais e escolas.
+                </p>
+
+                <p>
+                    Já o projeto <strong>BioLuz</strong> instalou biodigestores em comunidades rurais para geração de
+                    energia limpa a partir
+                    de resíduos orgânicos, beneficiando 150 famílias e reduzindo em 40% o uso de lenha.
+                </p>
+
                 <ul>
-                    <li>📍 Local: Porto Alegre, RS</li>
-                    <li>📅 Início: 2023-2024</li>
-                    <li>✅ Status: Finalizado</li>
+                    <li>📍 Locais: Porto Alegre, RS e Chapada Diamantina, BA</li>
+                    <li>📅 Períodos: 2020–2024</li>
+                    <li>✅ Status: Finalizados</li>
                 </ul>
+
                 <div>
                     <span class="tag">Arte</span>
                     <span class="tag">Reciclagem</span>
                     <span class="tag">Infantil</span>
-                </div>
-                <img src="./src/img/EcoArte.png" alt="Projeto EcoArte" class="imagem-full">
-            </article>
-
-            <article>
-                <h3>BioLuz <span class="badge">Finalizado</span></h3>
-                <p>Instalação de biodigestores em comunidades rurais para geração de energia limpa a partir de resíduos
-                    orgânicos. Beneficiou 150 famílias e reduziu 40% o uso de lenha.</p>
-                <ul>
-                    <li>📍 Local: Chapada Diamantina, BA</li>
-                    <li>📅 Início: 2020-2022</li>
-                    <li>✅ Status: Finalizado</li>
-                </ul>
-                <div>
                     <span class="tag">Energia</span>
                     <span class="tag">Sustentabilidade</span>
                     <span class="tag">Comunidade</span>
                 </div>
-                <img src="./src/img/BioLuz.png" alt="Projeto BioLuz" class="imagem-full">
             </article>
+            <section class="carrossel" id="carrossel-concluido">
+                <button class="btn-esquerda">⬅</button>
+                <div class="carrossel-container">
+                    <img src="./src/img/EcoArte.png" alt="EcoArte" class="carrossel-img ativo">
+                    <img src="./src/img/BioLuz.png" alt="BioLuz" class="carrossel-img">
+                </div>
+                <button class="btn-direita">➡</button>
+            </section>
         </section>
+
+
 
         <!-- ==================== Voluntariado ==================== -->
         <section>
@@ -220,38 +232,26 @@
             </form>
             <div id="mensagem-doacao"></div>
         </section>
-
     </main>
 
-    <!-- ==================== MODAL DE TERMOS ==================== -->
+    <!-- Modal de Termos -->
     <dialog id="modal-termos">
         <header>
             <h3>📜 Termos e Políticas</h3>
         </header>
-
         <section>
-            <p>
-                Ao se cadastrar ou enviar mensagens, você concorda com os termos de uso da ONG VerdeVida,
-                incluindo o uso responsável dos dados e respeito à nossa missão ambiental.
-            </p>
+            <p>Ao se cadastrar ou enviar mensagens, você concorda com os termos de uso da ONG VerdeVida...</p>
         </section>
-
         <footer>
             <button onclick="document.getElementById('modal-termos').close()">Concordo</button>
         </footer>
     </dialog>
 
-    <!-- ==================== FOOTER ==================== -->
     <footer id="contato">
         <p>📧 contato@verdevida.org.br | 📍 São Paulo - SP</p>
         <p>&copy; 2025 ONG VerdeVida</p>
+        <a href="#" onclick="document.getElementById('modal-termos').showModal()">Ver termos da ONG</a>
     </footer>
-
 </body>
 
-
 </html>
-
-
-
-
