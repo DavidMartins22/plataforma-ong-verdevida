@@ -14,19 +14,22 @@
 
 <body>
     <!-- ==================== HEADER ==================== -->
-    <header>
+ <header>
         <a href="index.html"><img src="./src/img/VerdeVida.png" alt="Logo da ONG VerdeVida" class="logo" /></a>
         <h1 class="nome">Ong VerdeVida</h1>
-        
         <nav class="menu-mobile" id="menu-mobile">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
+                <a href="#">Projetos ▾</a>
+                <ul class="submenu">
+                    <li><a href="projetos.html#projetos-ativos">Ativos</a></li>
+                    <li><a href="projetos.html#projetos-concluidos">Concluídos</a></li>
+                </ul>
                 <li><a href="cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
         <button id="menu-btn">☰</button>
-    </header>
+ </header>
 
     <!-- ==================== MAIN ==================== -->
     <main>
@@ -259,6 +262,7 @@
 </body>
 
 </html>
+
 
 
 
