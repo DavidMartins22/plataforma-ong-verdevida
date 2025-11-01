@@ -1,0 +1,95 @@
+/* Botão padrão com estilo visual e transições suaves */
+.btn {
+  background-color: var(--color-accent); /* Cor de fundo principal do botão */
+  color: var(--color-neutral-100); /* Cor do texto */
+  padding: var(--space-2) var(--space-3); /* Espaçamento interno vertical e horizontal */
+  border: none; /* Remove borda padrão */
+  border-radius: var(--radius-md); /* Bordas arredondadas médias */
+  cursor: pointer; /* Cursor de clique */
+  transition: all 0.3s ease; /* Transição suave para qualquer mudança */
+}
+
+/* Estilo do botão ao passar o mouse */
+.btn:hover {
+  background-color: var(--color-secondary); /* Cor de fundo alternativa no hover */
+}
+
+/* Estilo do botão quando desabilitado */
+.btn:disabled {
+  background-color: var(--color-neutral-300); /* Cor neutra para indicar desativado */
+  cursor: not-allowed; /* Cursor de bloqueio */
+}
+
+/* Badge: pequeno marcador visual para destaque ou contagem */
+.badge {
+  background-color: var(--color-neutral-300); /* Cor de fundo neutra */
+  color: var(--color-neutral-100); 
+  padding: 0.2rem 0.6rem; /* Espaçamento interno */
+  border-radius: var(--radius-sm); /* Bordas arredondadas pequenas */
+  font-size: var(--font-xs); /* Fonte pequena */
+}
+
+/* Tag: marcador de categoria ou filtro */
+.tag {
+  background-color: var(--color-neutral-300);
+  color: var(--color-dark); /* Texto escuro */
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-sm);
+  margin-right: var(--space-1); /* Espaço à direita para separação */
+}
+
+
+/* Carrossel: container de imagens com navegação lateral */
+.carrossel {
+  display: flex; /* Layout flexível horizontal */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 16px; /* Espaço entre elementos */
+  margin: 32px 0; /* Margem vertical */
+}
+
+/* Container do carrossel com limite de largura e ocultação de overflow */
+.carrossel-container {
+  width: 1000%; /* Largura exagerada para rolagem (ajustável via JS) */
+  max-width: 1400px; /* Limite máximo de largura */
+  overflow: hidden; /* Oculta conteúdo que ultrapassa os limites */
+  position: relative; /* Permite posicionamento absoluto interno */
+}
+
+/* Imagem do carrossel com estilo visual e transição */
+.carrossel-img {
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: auto; /* Altura proporcional */
+  max-height: 700px; /* Altura máxima */
+  display: none; /* Oculta por padrão */
+  transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+  border: 2px solid var(--color-primary); /* Borda com cor primária */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 14px 26px rgba(21, 255, 0, 0.5); /* Sombra verde vibrante */
+}
+
+/* Imagem ativa do carrossel visível */
+.carrossel-img.ativo {
+  display: block; /* Exibe a imagem ativa */
+  opacity: 1; /* Totalmente visível */
+}
+
+/* Botões de navegação do carrossel (esquerda e direita) */
+.btn-esquerda,
+.btn-direita {
+  background-color: var(--color-primary); /* Cor de fundo primária */
+  color: var(--color-neutral-100); /* Texto claro */
+  border: none; /* Sem borda */
+  padding: 4px 6px; /* Espaçamento interno */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  border-radius: 6px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de clique */
+  transition: background-color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Efeito de hover nos botões do carrossel */
+.btn-esquerda:hover,
+.btn-direita:hover {
+  background-color: var(--color-secondary); /* Cor alternativa ao passar o mouse */
+}

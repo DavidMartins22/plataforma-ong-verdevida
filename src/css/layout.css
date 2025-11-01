@@ -1,0 +1,237 @@
+/* Aplica box-sizing universal para facilitar controle de largura e padding */
+* {
+    box-sizing: border-box;
+}
+
+/* Define o grid principal da página com 12 colunas e espaçamento entre elementos */
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-light);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Define a área principal ocupando 10 colunas centrais */
+main {
+    grid-column: 2 / span 10;
+}
+
+/* Header e footer ocupam toda a largura do grid */
+header, footer {
+    grid-column: 1 / span 12;
+    background-color: var(--color-primary);
+    color: var(--color-neutral-100);
+    padding: var(--space-2);
+    text-align: center;
+}
+
+/* Estiliza o cabeçalho com layout flexível e fixação no topo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-2) var(--space-4);
+    background-color: var(--color-primary);
+    color: var(--color-neutral-100);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilo para rótulos de formulário */
+label {
+    display: block;
+    margin-bottom: var(--space-1);
+    font-weight: 500;
+}
+
+/* Botão padrão com estilo visual e transição */
+button {
+    padding: 12px var(--space-3);
+    border-radius: var(--radius-xl);
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-neutral-100);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Imagem em largura total com borda e sombra */
+.imagem-full {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 12px 24px rgba(21, 255, 0, 0.5);
+}
+
+/* Logo com altura fixa e bordas arredondadas */
+.logo {
+    height: 70px;
+    border-radius: var(--radius-xl);
+}
+
+/* Nome centralizado com estilo tipográfico */
+.nome {
+    flex: 1;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-light);
+    margin: 15px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botão do menu hambúrguer (mobile), oculto por padrão */
+#menu-btn {
+    font-size: var(--font-xl);
+    background: none;
+    border: none;
+    color: var(--color-neutral-100);
+    cursor: pointer;
+    display: none;
+}
+
+/* Menu mobile horizontal com espaçamento entre itens */
+.menu-mobile {
+    display: flex;
+    gap: var(--space-3);
+}
+
+/* Links do menu mobile com estilo e transição */
+.menu-mobile a {
+    color: var(--color-neutral-100);
+    text-decoration: none;
+    font-size: var(--font-md);
+    transition: color 0.3s ease;
+}
+
+.menu-mobile a:hover {
+    color: var(--color-accent);
+}
+
+/* Menu mobile alternativo com mesmo estilo */
+#menu-mobile {
+    display: flex;
+    gap: var(--space-3);
+}
+
+#menu-mobile a {
+    color: var(--color-neutral-100);
+    text-decoration: none;
+    font-size: var(--font-md);
+    transition: color 0.3s ease;
+}
+
+#menu-mobile a:hover {
+    color: #c8e6c9;
+}
+
+/* Espaçamento entre seções */
+section {
+    margin-bottom: var(--space-4);
+}
+
+/* Navegação principal com lista horizontal centralizada */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Links da navegação com estilo e transição */
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-neutral-100);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-dark);
+}
+
+/* Estilo dos cards com sombra e efeito de hover */
+.card {
+    background-color: var(--color-light);
+    border-radius: var(--radius-xm);
+    box-shadow: 0 4px 12px rgba(21, 255, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: var(--space-4);
+}
+
+/* Efeito de elevação ao passar o mouse no card */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem dentro do card ocupa toda a largura */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Menu principal com lista horizontal e fundo colorido */
+.menu-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-primary);
+}
+
+/* Cada item do menu pode conter submenu */
+.menu-principal ul li {
+    position: relative;
+}
+
+/* Links do menu principal com padding e estilo */
+.menu-principal ul li a {
+    display: block;
+    padding: var(--space-2) var(--space-4);
+    color: var(--color-neutral-100);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Efeito de hover nos links do menu principal */
+.menu-principal ul li a:hover {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+}
+
+/* Submenu oculto por padrão, aparece ao passar o mouse */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Estilo dos links do submenu */
+.submenu li a {
+    padding: var(--space-2) var(--space-4);
+    white-space: nowrap;
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item pai */
+.menu-principal ul li:hover .submenu {
+    display: flex;
+}

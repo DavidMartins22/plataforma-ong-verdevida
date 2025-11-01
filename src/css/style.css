@@ -1,0 +1,7 @@
+/* Importa os módulos CSS separados para manter o código organizado e modular */
+@import url(./variables.css); /* Variáveis globais: cores, fontes, espaçamentos */
+@import url(./components.css); /* Estilos de componentes reutilizáveis (botões, cards, etc.) */
+@import url(./layout.css); /* Estrutura geral de layout com grid e flexbox */
+@import url(./form.css); /* Estilização de formulários e campos */
+@import url(./animations.css); /* Animações personalizadas (ex: fadeIn) */
+@import url(./responsivo.css); /* Regras de responsividade e media queries */

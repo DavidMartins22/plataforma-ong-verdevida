@@ -1,0 +1,78 @@
+/* Responsividade */
+
+/* Em telas até 1600px, o conteúdo principal ocupa toda a largura */
+@media (max-width: 1600px) {
+    main {
+        grid-column: 1 / span 12;
+    }
+}
+
+/* Em telas até 992px, o menu mobile é reorganizado em coluna */
+@media (max-width: 992px) {
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Em telas até 768px, ajustes para layout mobile */
+@media (max-width: 768px) {
+    .imagem-full {
+        width: 100%;
+        height: auto;
+    }
+
+    #menu-btn {
+        display: block; /* Exibe o botão hambúrguer */
+    }
+
+    .menu-mobile {
+        display: none; /* Oculta o menu por padrão */
+        flex-direction: column;
+        background-color: var(--color-dark);
+        position: absolute;
+        top: 80px;
+        right: 32px;
+        padding: 16px;
+        border-radius: var(--radius-xl);
+    }
+
+    .menu-mobile.active {
+        display: flex; /* Exibe o menu quando ativo */
+    }
+
+    .nome {
+        text-align: center;
+        align-items: center; /* Centraliza o nome */
+    }
+
+    #menu-mobile {
+        display: none;
+        flex-direction: column;
+        background-color: var(--color-accent);
+        position: absolute;
+        top: 80px;
+        right: 32px;
+        padding: var(--space-3);
+        border-radius: var(--radius-xl);
+    }
+
+    #menu-mobile.active {
+        display: flex;
+    }
+}
+
+/* Em telas até 576px, reduz o tamanho dos títulos */
+@media (max-width: 576px) {
+    h1,
+    h2 {
+        font-size: var(--font-lg);
+    }
+}
+
+/* Em telas até 400px, reduz o tamanho da fonte dos links de navegação */
+@media (max-width: 400px) {
+    nav a {
+        font-size: var(--font-sm);
+    }
+}

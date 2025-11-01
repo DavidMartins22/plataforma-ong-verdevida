@@ -1,0 +1,26 @@
+/* Estilo geral para o formulário */
+form {
+    background-color: var(--color-neutral-100); /* Fundo branco ou claro */
+    padding: var(--space-4); /* Espaçamento interno generoso */
+    border-radius: var(--radius-md); /* Bordas arredondadas médias */
+    box-shadow: 0 0 10px rgb(0, 247, 12); /* Sombra verde vibrante para destaque */
+    overflow: hidden; /* Garante que conteúdo extra não ultrapasse os limites do formulário */
+}
+
+/* Estilo para campos de entrada, seleção e área de texto */
+input, select, textarea {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 100%; /* Garante que não ultrapasse o contêiner */
+    padding: var(--space-2); /* Espaçamento interno confortável */
+    margin-bottom: var(--space-2); /* Espaço entre os campos */
+    border: 1px solid var(--color-neutral-300); /* Borda neutra padrão */
+    border-radius: var(--radius-sm); /* Bordas arredondadas pequenas */
+    font-size: var(--font-md); /* Tamanho de fonte médio */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo de largura */
+}
+
+/* Estilo visual ao focar nos campos */
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-secondary); /* Realce com cor secundária */
+    outline: none; /* Remove contorno padrão do navegador */
+}
