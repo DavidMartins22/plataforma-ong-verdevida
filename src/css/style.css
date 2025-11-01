@@ -449,35 +449,46 @@ dialog#modal-termos section {
 }
 
 @media (max-width: 768px) {
-    .imagem-full {
-        width: 100%;
-        height: auto;
-    }
+  /* Faz o submenu ocupar toda a largura dentro do menu mobile */
+  .menu-principal ul li {
+    width: 100%;
+    text-align: center;
+  }
 
-    #menu-btn {
-        display: block;
-    }
+  /* Submenu fica escondido inicialmente */
+  .menu-principal .submenu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-accent);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    margin-top: 4px;
+  }
 
-    .menu-mobile,
-    #menu-mobile {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        right: 32px;
-        padding: var(--space-3);
-        border-radius: var(--radius-xl);
-    }
+  /* Quando ativo, exibe o submenu dentro do menu mobile */
+  .menu-principal .submenu.active {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
 
-    .menu-mobile.active,
-    #menu-mobile.active {
-        display: flex;
+  /* Animação suave */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
     }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-    .nome {
-        text-align: center;
-        align-items: center;
-    }
+  /* Corrige o clique */
+  #menu-projetos {
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 576px) {
